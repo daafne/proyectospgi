@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.circulo{
+	width:100% ;
+	clip-path: circle(62.6% at 11% 51%);
+	background-color: #3A4B5B;
+	opacity: 51%;
+}
+
+
+section{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+max-width: 1000px;
+width: 100%;
+margin: auto;
+height: 100vh;
+gap: 50px;
+}
+
+
+article{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+article img{
+	width: 100%;
+}

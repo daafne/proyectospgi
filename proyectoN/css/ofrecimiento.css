@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.ofrecimiento{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.circulo{
+  width: 1500px;
+    height: 1500px;
+    z-index: -1;
+    background-color: #3A4B5B;
+    opacity: 51%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(0%,-50%);
+}
+
+.letracons{
+    font-family: 'Inter',sans-serif;
+    font-size: 50px;
+    text-shadow: 5px 1px 3px grey;
+}
+.escritorio2{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+max-width: 1000px;
+width: 100%;
+margin: auto;
+padding: 30px;
+gap: 50px;
+background-color: beige;
+}
+
+
+.peimagen{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+.pcons{
+   font-family: 'Inter',sans-serif;
+    font-size: 30px;
+}
+
+.ofrecimiento1{
+    width: 943px;
+    height: 522px;
+
+}
