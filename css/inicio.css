@@ -1,0 +1,80 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.cajafondo{
+	height: 100vh;
+	background-color: beige;
+}
+
+
+.cajarecogedora{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.proyectos{
+ 	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border: 5px solid;
+    
+
+}
+
+.proyectos p {
+	text-align: center;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.cajageneral{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1470px;
+    border: 7px solid #C93384;
+
+
+}
+
+.caja{
+	display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    background-color: pink;
+
+}
+
+
+.cdentro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: palevioletred;
+    width: 55%;
+    height:50%;
+}
+
+.parrafo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:25px;
+    
+}
+
