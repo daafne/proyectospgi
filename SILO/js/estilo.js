@@ -35,7 +35,14 @@ icono_burger.addEventListener("click",
        // div.classList.replace("ocultar", "mostrar");    
        // div.classList.replace("mostrar", "ocultar"); 
      });
+//recupero el elemento html que hace referencia al corazon
+const corazon= document.querySelector(".corazon");
+console.log(corazon);
 
+corazon.addEventListener("click",function)(){
+this.
+
+});
      
      
 
