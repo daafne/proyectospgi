@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.partelogo{
+
+}
+.logo{
+	width: 100px;
+
+}
+
+.bordeamarillo{
+	display: flex;
+    flex-direction: column;
+	width: 222px;
+	border: 5px solid #C0B047;
+	margin: 50px;
+	
+}
+
+h1{
+	font-size: 30px;
+	text-align: center;
+	font-family: "Roboto";
+
+}
+p{
+	font-size: 20px;
+	text-align: center;
+	font-family: "Roboto";
+
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fuente/Roboto-Regular.tff");
+}
+.boton{
+	background-color: skyblue;
+	padding: 14px;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: "Roboto";
+
+}
+
+.contenedor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 15px;
+}
+
+.contenedor div{
+	width: 300px;
+	height: 300px;
+}
+
+.contenedor div img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.derecho{
+	width: 300px;
+	height: 300px;
+	box-shadow: 2px 1px 8px 0px black;
+}
+
+
+.izquierdo{
+	width: 300px;
+	height: 300px;
+	background-color: skyblue;
+	box-shadow: 2px 1px 8px 0px black;
+}
