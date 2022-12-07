@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.Todo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.Primero {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.Segundo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.imagen {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.Ver {
+    margin-top: 10px;
+
+}
+
+.Arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Oregano";
+
+
+}
+
+@font-face {
+    font-family: "Oregano";
+    src: url("Fuente/Oregano-Regular.tff");
+}
+
+.Titulo {
+    font-size: 86px;
+
+}
+
+.Parrafo {
+    font-size: 40px;
+
+}
+
+.Ver {
+    width: 155px;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px;
+
+}
+
+.modal{
+    border-radius: 30px;
+    width: 50vh;
+    height: 30vw;
+    margin: auto;
+    background-color: #e3e3e3;
+    box-shadow: 0px 0px 5px -2px;
+    border: 0px;
+}
+
+
+.dentro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    margin-top: 90px;
+    
+}
+.aceptar{
+    
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'oregano';
+    font-size: 27px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 0px 5px -2px;
+    color: black;
+   
+    
+}
+.monalisa{
+    width: 60%;
+}
+
+.Abajo{
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 48px;
+    left: 50px;
+
+}
+.corazon{
+    position: absolute;
+    top: 30px;
+    right: 26px;
+}
+
+dialog::backdrop{
+background-color: rgba(246, 238, 120, 50%);
+
+}
