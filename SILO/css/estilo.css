@@ -16,7 +16,7 @@ body {
 
  @font-face{
 	font-family: "Work Sans";
-	src:../fuente/GoogleFonts-WorkSans-Regular.ttf ;
+	src:url("../fuente/GoogleFonts-WorkSans-Regular.ttf");
 } 
 
 
@@ -36,6 +36,9 @@ body {
 	color: #999;
 
 
+}
+.hamburguesa{
+	cursor: pointer;
 }
 
 .izq {
@@ -108,34 +111,10 @@ section{
 	gap: 100px;
 }
 
-header .puñetero .ocultar{
-	display: none;
-}
 
-header .puñetero .mostrar{
-	display: flex;
-}
 
-/*@media (max-width:700px) {
-	section .parte1 h1{
-		font-size:50px;
 
-	}
-	@media(max-width:700px) {
-		section .parte1 p{
-			font-size:20px;
-		}
-		
-	}
-	@media(max-width:700px) {
-		section .parte1 .boton{
-			font-size:20px;
-		}
-		
-	}
-	
-}*/
-//<!--abrevia responsive-->//
+/* abrevia responsive */
 section .parte1 h1{
 	width: 550px;
 	font-size:clamp(1vw,4vw,6vw);
@@ -146,13 +125,19 @@ section .parte1 p{
 	font-size:clamp(1vw,4vw,6vw);
 }
 
+header .puñetero .menu{
+	display: flex;
+}
+
+
+
 @media (max-width: 1000px) {
 	header .hamburguesa {
 		display: inline-flex;
 
 	}
 
-	header .menu {
+	header .puñetero .menu {
 		position: absolute;
 		width: 100vw;
 		height: 90vh;
@@ -160,7 +145,7 @@ section .parte1 p{
 		bottom: 0px;
 		left: 0px;
 
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
@@ -194,11 +179,7 @@ section .parte1 p{
 	
 }
 
-header .puñetero .ocultar{
-	display: none;
-}
-
-header .puñetero .mostrar{
+header .menu.mostrar{
 	display: flex;
 }
 
