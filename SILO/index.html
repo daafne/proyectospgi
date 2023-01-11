@@ -7,7 +7,70 @@
 	<link rel="stylesheet" href="./css/estilo.css">
 	<title>Document</title>
 </head>
+
 <body>
+	<section class="cuadro-busqueda">
+		<article class="arriba">
+			<a class="btn-cierre" href="#">X</a>
+			<input class="texto-busqueda" type="text" placeholder="Buscar..."></input>
+		
+		</article>
+		
+		<article class="abajo">
+			<div class="grupofiltrado">
+			<div class="filtrar1">
+				<h1>Filtrar por categorías</h1>
+				<div class="conjuntodiseño">
+				<a class="grafico">Diseño Gráfico</a>
+				<a class="web">Diseño Web</a>
+				<a class="word">WordPress</a>
+			</div>
+			</div>
+			
+			<div class="filtrar2">
+				<h1>Filtrar por etiquetas</h1>
+
+				<div class="etiquetas">
+					<div class="eticonjunto">
+						<a class="tags">Blogging</a>
+						<a class="tags">Css </a>
+						<a class="tags">Colores</a>
+						<a class="tags">Descargables</a>
+					</div>
+					<div class="eticonjunto">
+						<a class="tags">Ecommerce </a>
+						<a class="tags">Formación</a>
+						<a class="tags">Ghost</a>
+						<a class="tags">hardware </a>
+					</div>
+					<div class="eticonjunto">
+						<a class="tags">Html</a>
+						<a class="tags">Ilustraciones</a>
+						<a class="tags">Inspiración </a>
+						<a class="tags">Packaing</a>
+					</div>
+					<div class="eticonjunto">
+						<a class="tags">Plantillas</a>
+						<a class="tags">Plunggings</a>
+						<a class="tags">SEO </a>
+						<a class="tags">Silo</a>
+						<a class="tags">SiloMag</a>
+					</div>
+					<div class="eticonjunto">
+					<a class="tags">Sofware </a>
+					<a class="tags">Tipografía</a>
+					<a class="tags">Tutoriales</a>
+					<a class="tags">UI</a>
+					<a class="tags">UX</a>
+				</div>
+					<a class="tags">Vídeo</a>
+				</div>
+			</div>
+		</div>
+
+		</article>
+	</section>
+
 	<header class="cabecera">
 		<i id="burger" class="fa-solid fa-bars fa-2x hamburguesa">
 		</i>
@@ -18,6 +81,16 @@
 		<div class="puñetero">
 			<nav class="menu">
 				<ul class="izq">
+
+					<div class="switch-content">
+		<input type="checkbox"  class="checkbox" id="chk"/>
+		<label class="label" for="chk">
+			<img class="soluna" src="imagenes/sol.png">
+			<img class="soluna" src="imagenes/luna.png">
+		<div class="ball"></div>
+		</div>
+	</div>
+
 					<a href="#" class="Temas"> Temas WordPress </a>
 					<a href="#" class="Soporte"> Soporte </a>
 					<a href="#" class="Blog"> Blog </a>
@@ -32,37 +105,176 @@
 			</nav>
 			
 			<i class="fa-solid fa-magnifying-glass fa-1x lupa"></i>
-		</div>
+			
 	</header>
 	<section class="todo">
 		<section class="parte1">	
 			<div>
 				<h1>Temas WordPress en Español</h1>
-				<p>En SiloCreativo diseñamos plantillas para WordPress con el objetivo de facilitar y enriquecer tu experiencia como blogger o webmaster, para que solo tengas que preocuparte de publicar contenido, del resto nos encargamos nosotros.</p>
+				<p class="parrafosilo">En SiloCreativo diseñamos plantillas para WordPress con el objetivo de facilitar y enriquecer tu experiencia como blogger o webmaster, para que solo tengas que preocuparte de publicar contenido, del resto nos encargamos nosotros.</p>
 				<p class="boton">Ver Temas WordPress</p>
 			</div>
 		</section>
     <main>
 		<section class="parte2">
-			<article>
-				<i class="fa-solid fa-heart"></i>
-				<img class="img3" src="img/trouvelot-tema-wordpress.webp">
-				<h1>Trouvelot</h1>
-				<p>Blog</p>
+			<article class="plantilla">
+				<a href= https://www.silocreativo.com/wordpress/trouvelot>
+					<img class="img3" src="img/trouvelot-tema-wordpress.webp">
+				</a>
+				<div class="cortitu">
+					<a href= https://www.silocreativo.com/wordpress/trouvelot>
+						<div class="titulo">
+							<h1>Trouvelot</h1>
+							<p>Blog</p>
+						</div>
+					</a>
+					
+					<div class="cajacorazon">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+					
 			</article>
-			<article>
-				<i class="fa-solid fa-heart"></i>
+			<article class="plantilla">
+				<a href= https://www.silocreativo.com/conociendo-rosalie-nuestra-plantilla-wordpress-blogs-moda-lifestyle>
+				
 				<img class="img3" src="img/rosalie-plantilla-wordpress-lifestyle.webp">
-				<h1>Rosalie</h1>
-				<p>Blog</p>
+				<div class="cortitu">
+					<div class="titulo">
+					<h1>Rosalie</h1>
+					<p>Blog</p>
+					</div>
+				</a>
+					<div class="cajacorazon">
+					<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+				
 			</article>
-			<article>
-				<i class="fa-solid fa-heart"></i>
+			<article class="plantilla">
+				<a href= https://www.silocreativo.com/janice-plantilla-wordpress-para-bloggers-de-moda>
+				
 				<img class="img3"  src="img/janice-plantilla-wordpress-para-bloggers-fashion.webp">
-				<h1>Janice</h1>
-				<p>Blog</p>
+				<div class="cortitu">
+					<div class="titulo">
+					<h1>Janice</h1>
+					<p>Blog</p>
+					</div>
+				</a>
+					<div class="cajacorazon">
+					<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+				
+				
 			</article>
 		</section>
+        <section class="englobap1yp2">
+			<section class="principal1">
+				<h1 class="textoblog">Blog</h1>
+
+				<section class="articulos">
+					<article class="articuloestilo">
+						<img class="imgarticle" src="img/silomag-139.webp">
+						<h1>SiloMag #139</h1>
+
+						<p class="intro">Empezamos el último mes del año con una nueva entrega de SiloMag, 
+							donde os traemos las mejores noticias y recursos sobre diseño gráfico, 
+							diseño web y WordPress. ¡Esperamos que os guste!</p>
+
+						<article class="etiquetas1">
+							<a class="tags2">Diseño gráfico</a>
+							<a class="tags2">Diseño web</a>
+							<a class="tags2">Wordpress</a>
+						</article>
+					</article>
+				
+
+					<article class="guiabasica">
+						<img class="imgarticle" src="img/guia-basica-iconos.webp">
+						<h1 class="principios"> 5 principos básicos para diseñar iconos</h1>
+						<p>A pesar de disponer de muchísimas bibliotecas online, 
+							muchas veces tenemos que crear desde cero nuestros propios iconos. Y lo mejor es siempre tener 
+							en mente ciertos fundamentos para conseguir los mejores resultados.</p>
+								<a class="tags2">Diseño gráfico</a>
+					</article>
+				<!-- </section> -->
+				<!-- <section class="tarjetaprincipal2">  -->
+					<article class="guiabasica">
+						<img class="imgarticle"src="img/calendario-silocreativo-2022-diciembre.webp">
+						<h1>Calendario descargable:Diciembre 2022</h1>
+						<p>Nos despedimos de nuestro paseo por el mundo en Sevilla. 
+							Saliamos de Paris y acabamos en nuestra ciudad, a la que os invitamos!</p>
+							<article class="etiquetas1">
+								<a class="tags2">Diseño gráfico</a>
+								<a class="tags2">Diseño web</a>
+								<a class="tags2">Wordpress</a>
+							</article>
+					</article>
+					<article class="guiabasica">
+						<img class="imgarticle" src="img/wordpress-lista-contenidos-cpt.webp">
+						<h1>Cómo añadir CPT al editor de bloques de WordPress</h1>
+						<p>Los Custom Post Type son una excelente forma de añadir contenido a nuestro WordPress más allá de las entradas y las páginas.
+							Y gracias al editor de bloques, es más fácil que nunca añadirlos a nuestros diseños.</p>
+							<div>
+								<a class="tags2">Wordpress</a>
+							</div>
+					</article>
+					<article class="guiabasica">
+						<img class="imgarticle" src="img/silomag-138.webp">
+						<h1>SiloMag #138</h1>
+						<p>Ya está aquí una nueva entrega de SiloMag, la sección de SiloCreativo en donde, cada dos semanas, compartimos las últimas noticias, 
+							recursos y artículos que nos han parecido más interesantes de los últimos días.</p>
+							<article class="etiquetas1">
+								<a class="tags2">Diseño gráfico</a>
+								<a class="tags2">Diseño web</a>
+								<a class="tags2">Wordpress</a>
+							</article>
+					</article>
+				</section>
+			</section>
+	</section>
+
+	<footer>
+		<article class="conjuntoiconosinfo">
+		<article class="articulofooter">
+			<h1>ACERCA DE SILOCREATIVO</h1>
+			<p>Creamos Temas para WordPress que son fáciles de usar 
+				y bien documentados para cualquier persona que quiera hacer crecer su sitio web.</p>
+			
+		</article>
+		
+		<article class="iconitos">
+			<img class="icono" src="img/gorjeo(3).png">
+			<img class="icono" src="img/facebook(2).png">
+			<img class="icono"src="img/logotipo-de-instagram.png">
+			<img class="icono"src="img/linkedin(1).png">
+			<img class="icono"src="img/google-plus.png">
+			<img class="icono"src="img/github.png">
+			<img class="icono"src="img/youtube.png">
+			<img class="icono"src="img/behance.png">
+
+		</article>
+			<h1 class="titulocorporativo"> © 2022 Diseñado con cariño por SiloCreativo ;)</h1>
+		</article>
+		<article class="infotags">
+			<h1>INFO</h1>
+			<ul>
+				<li>Nosotros</li>
+				<li>Trabajos</li>
+				<li>Showcase</li>
+				<li>Documentación</li>
+				<li>Recursos</li>
+				<li>Contacto</li>
+				<li>Aviso Legal</li>
+				
+			</ul>
+		</article>
+		
+	
+
+	
+	</footer>
 		
 	</main>
 
