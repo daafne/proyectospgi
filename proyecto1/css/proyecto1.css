@@ -1,0 +1,706 @@
+
+
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+
+body{
+	display: flex;
+	background-color: #343353;
+	justify-content: flex-end;
+	
+	
+}
+
+.menutodo{
+	background-color: #343353;
+	width: 20vw;
+	position: fixed;
+	left: 0px;
+}
+	
+
+
+.menu{
+	
+background-color: #343353;
+flex-direction: column;
+height: 100vh;
+width: 20vw;
+display: flex;
+padding: 30px;
+	
+}
+
+
+.menu h1{
+	
+	font-size: 15px;
+	color: white;
+}
+
+.animation{
+	display: flex;
+	gap: 5px;
+}
+
+.animation p{
+	color: white;
+	font-size: 15px;
+}
+.recutext{
+	
+	animation-name: flipInX; /* referring directly to the animation's @keyframe declaration */
+  	animation-duration: 2s; /* don't forget to set a duration! */
+	animation-iteration-count:infinite;
+		
+
+	 
+}
+	  
+
+.cliente{
+	width: 200px;
+    padding: 40px;
+  }
+  
+
+.conjunto{
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+}
+	
+	
+	
+	
+.user{
+	width: 80px;
+}
+
+.tituloicono{
+display: flex;
+gap: 7px;
+padding: 13px;
+align-items: center;
+}
+
+.iconito{
+	width: 24px;
+}
+
+.overlay{
+	position: absolute;
+	z-index: -1;
+  }
+
+.layer{
+	position:relative;
+}
+#linea{
+	bottom: 367px;
+	right: 274px;
+  }
+  
+  
+
+
+#curva{
+	top: 211px;
+
+}
+#triangulo{
+	left: 433px;
+	bottom: 307px;
+  }
+
+
+#lila{
+	right: 434px;
+}
+
+
+.imagenusertitulo{
+
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	height: 100vh;
+
+}
+.imagenusertitulo h1 {
+	color: white;
+	font-size: 23px;
+}
+.imagenusertitulo h2{
+	color: white;
+	font-size: 20px;
+}
+.redessociales{
+	display: flex;
+	gap: 20px;
+
+}
+.icono{
+	width: 30px;
+	height: 30px;
+}
+.boton {
+	text-align: center;
+    border-radius: 50px;
+    background-color: #FA4D61;
+    font-size: 24px;
+    color: white;
+    padding: 15px;
+	
+}
+
+/*los hovers por algun motivo no funcionan*/
+.boton:hover {
+	cursor: pointer;
+    background-color: pink;
+}
+
+.cruz{
+	width: 30px;
+	height: 30px;
+	top: 256px;
+	position: relative;
+	cursor: pointer;
+}
+
+
+.boton1{
+	padding: 30px;
+}
+.boton1:hover{
+	cursor: pointer;
+    background-color: pink;
+}
+
+.tituloimagenbocadillo{
+	display: flex;
+	align-items: center;
+	gap: 37px;
+}
+
+.tituloimagenbocadillo h1 {
+	font-size: 30px;
+}
+
+	
+
+.tituloimagen h1{
+	font-size: 18px;
+}
+.sombra{
+	
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	box-shadow: inset 0 -1em 1em rgba(0,0,0,0.1), 0 0 0 1px rgb(255,255,255), 0.3em 0.1em 1em rgba(0,0,0,0.3);
+
+}
+.bocadillo{
+	display: flex;
+	align-items: center;
+	padding: 77px;
+
+}
+.textoboton2{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.textoboton2 h1{
+
+	font-size: 20px;
+
+}
+.textoboton2 .boton1{
+	
+	background-color:#FE4C62 ;
+	font-size: 15px;
+	width: 180px;
+	border-radius: 10px;
+	padding: 10px;
+
+}
+
+.user2{
+	width: 148px;
+}
+
+.aboutme{
+	
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 110px;
+	gap: 20px;
+}
+
+
+.titulosvisitas{
+	display: flex;
+	justify-content: space-evenly;
+	gap: 15px;
+	padding: 25px;
+}
+
+.tituloporc{
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+	
+}
+.titulobarras{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 10px;
+}
+.titulobarras h1{
+	font-size: 15px;
+}
+.progress{
+	width: 200px;
+	position: relative;
+	background-color: grey;
+	height: 20px;
+}
+.progressbar {
+	
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	top:0;
+	left:0;
+	border-radius: 0 12px 12px 0;
+	transition: all 0.5s ease-in-out;
+	
+}
+.progress:hover > .progressbar{
+	width: 60%;
+
+}
+.a{
+	background-color: #FED05D;
+
+}
+.b{
+	background-color: #FE4C62;
+
+}
+.c{
+	background-color: #706CE3;
+
+}
+
+
+
+/*progress::-moz-progress-bar { background:#FE4C62; }//
+progress::-moz-progress-bar { background: #706CE3; }*/
+
+.conjuntoiconotexto{
+	
+	display: flex;
+	gap: 15px;
+		
+	  
+}
+
+.textonumero{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.textonumero h1{
+	font-size: 35px;
+}
+.iconos3{
+	width: 40px;
+	height: 40px;
+}
+
+
+.services{
+	background-color: white;
+	padding: 110px;
+}
+
+.titulo{
+	font-size: 15px;
+	padding: 32px;
+	
+}
+.cajaservices{
+	display: flex;
+    align-items: center;
+    padding: 30px;
+	gap: 20px;
+}
+
+#ui{
+	background-color: #706CE3;
+
+}
+#ui h1{
+	color: white;
+}
+#ui p{
+	color: white;
+}
+#deve{
+	
+	background-color: #FED05D;
+
+}
+#ph{
+	background-color: #FE4C62;
+
+}
+#ph h1{
+	color: white;
+}
+#ph p{
+	color: white;
+}
+
+.caja1{
+	gap: 10px;
+	border-radius: 30px;
+    padding: 40px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.customjob{
+	font-size: 10px;
+	text-align: center;
+}
+
+
+
+.e{
+	width: 20px;
+	height: 20px;
+}
+.m{
+	width: 20px;
+	height: 20px;
+}
+.experience{
+	width: 100%;
+	background-color: white;
+	padding: 60px;
+}
+.tituloe{
+	font-size: 30px;
+    padding: 30px;
+}
+
+.conjuntoexperience{
+	display: flex;
+    gap: 41px;
+    padding: 62px
+}
+
+.exp1{
+	display: flex;
+    flex-direction: column;
+	gap: 15px;
+	padding: 30px;
+	font-size: 10px;
+}
+.exp1 h1{
+	font-size: 24px;
+}
+
+.iconofecha{
+	display: flex;
+	gap:10px;
+}
+
+.cajaexp1{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 20px;
+
+}
+.cajaexp2{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 20px;
+
+}
+
+.recentworks{
+	display: flex;
+	background-color: white;
+	flex-direction: column;
+	width: 100%;
+	padding: 60px;
+	gap: 10px;
+  
+}
+
+.recentworks h1{
+	font-size: 30px;
+}
+
+.pestañastodo{
+	display: flex;
+	font-size: 20px;
+	gap: 17px;
+}
+.imagenesworks{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.w1{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+}
+.vol1{
+	display: flex;
+	gap: 20px;
+	
+	
+}
+.vol2{
+	display: flex;
+	gap: 20px;
+}
+.pricingplans{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 100%;
+	padding: 60px;
+	gap: 40px;
+  
+	
+}
+.pricingplans h1{
+	font-size: 30px;
+}
+.preciosconjunto{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	gap: 20px;
+  }
+.precionumero{
+	display: flex;
+	gap:10px;
+
+}
+.precio1{
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 30px;
+	padding: 20px;
+	align-items: center;
+	gap:5px;
+}
+
+.imgprice{
+	width: 100px;
+}
+.getstarted{
+	background-color: #FE4C62; 
+	border-radius: 20px;
+	padding: 10px;
+	color: white;
+}
+
+.clientsreviews{
+	background-color: white;
+	display: flex;
+    flex-direction: column;
+}
+
+.clientsall{
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+}
+.textclients{
+	
+	padding: 50px;
+}
+.conjuntoimgtext{
+	display:flex;
+	padding: 15px;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+}
+.imguser3{
+	width: 110px;
+}
+.frase{
+	margin: auto;
+    font-size: 10px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    padding: 30px;
+    border-radius: 50px;
+}
+.marcas{
+	gap: 29px;
+	display: flex;
+	flex-direction: column;
+}
+.filan1{
+	display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imgclientss{
+	width: 45px;
+}
+.filan2{
+	display: flex;
+    justify-content: space-evenly;
+}
+.latestposts{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	
+}
+.latestposts h1{
+	padding: 50px;
+    font-size: 30px;
+}
+
+.imagenespost{
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	padding: 12px;
+}
+
+.dentroimpost{
+	border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+	padding: 3px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+	
+
+.titlepost{
+	font-size: 20px;
+}
+.textpost{
+	display: flex;
+	gap:10px;
+}
+.textpost h2{
+	font-size: 20px;
+}
+
+.imgp{
+	width: 350px;
+}
+
+.getintouch{
+	background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+	
+.gettexto{
+	padding: 50px;
+    font-size: 30px;
+
+}
+.getchange{
+	position:relative;
+	bottom: 10px;
+	font-size: 20px;
+}
+.getchange h2{
+	font-size: 10px;
+}
+.conjunto1{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+	
+}
+.gettextconj{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+.mapget{
+	width: 167px;
+	position:absolute;
+}
+
+
+.conjunto2{
+	gap:20px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.doscajas{
+	display: flex;
+	gap: 40px;
+}
+
+.cajaget{
+	background-color: beige;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border-radius: 30px;
+	padding: 20px;
+  }
+	
+
+.borderinput{
+	font-size: 20px;
+	border-style: none;
+	padding: 15px;
+	background-color: beige;
+  }
+
+
+
+
+.botonget{
+	background-color: #FE4C62;
+	border-radius: 20px;
+	padding: 15px;
+	width: 200px;
+}
+.botonget{
+	color: white;
+	text-align: center;
+}
