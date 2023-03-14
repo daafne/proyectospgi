@@ -3,7 +3,6 @@ import { CountUp } from '../countUp/dist/countUp.js';
 
 const activador= document.querySelector(".activacontador");
 
-
 //cuando se cargue la pagina web del ordenador
 //empieza a animarse
 
@@ -17,6 +16,10 @@ window.onload = function () {
     countup3.start();
     countup4.start();
 }
+
+
+
+
 
 
 

@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 60%;
+    gap: 30px;
+}
+
+
+.menu{
+	flex: 1 1 20%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0px;
+}
+	
+  
+.clasificacion{
+	display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.primeraparte{
+	flex: 1 1 80%;
+	display: flex;
+	gap: 20px;
+	
+}
+.textgeneral{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: space-around;
+	padding: 20px;
+	background-color: pink;
+	border-radius: 10px;
+}
+
+.redessociales{
+	display: flex;
+	gap: 10px;
+}
+.red{
+	width: 25px;
+	height: 25px;
+}
+.red:hover{
+	width: 40px;
+	height: 40px;
+}
+.botonredes{
+	gap: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.boton{
+	background-color: black;
+	width: 100px;
+	height: 55px;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+.boton:hover{
+	background-color: rgb(167, 161, 161);
+
+}
+
+.imagengrande{
+	height: 100%;
+	
+}
+.imagengrande img{
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.segundaparte{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+	
+	
+
+.conjuntoimagenes{
+	display: flex;
+    overflow: hidden;
+    width: calc(100%/2 - 17px);
+    border-radius: 20px;
+    position: relative;
+	
+
+
+
+	
+}
+
+
+.rosas{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	
+	
+		
+		
+}
+		
+.conjuntoimagenes:hover > .rosas{
+	transform: scale(1.1);
+	
+	
+
+}
+
+.overlay1{
+	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(238, 130, 238, 0.638);
+	transition: all 0.5s ease-in-out;
+	
+	cursor: pointer;
+}
+.overlay1 h1{
+	font-size: 30px;
+}
+footer{
+	
+	display: flex;
+	background-color: pink;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+  
+.texto{
+	display: flex;
+	flex-direction: column;
+	gap:100px;
+	align-items: center;
+	
+}
+.conjuntotexto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.texto1{
+	font-size: 50px;
+ }
+.texto2{
+	font-size: 15px;
+}
+.botonredes1{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;	
+}
+  
+a{
+	background-color: black;
+	width: 100px;
+	height: 29px;
+	border-radius: 20px;
+	color: white;
+	font-size: 15px;
+	padding: 5px;
+	text-align: center;
+  }
+a:hover{
+	background-color: rgb(167, 161, 161);
+
+ }
+
+.iconito{
+	width: 30px;
+	height: 30px;
+ }
+.iconito:hover{
+	width: 40px;
+	height: 40px;
+
+}
+.creditos{
+	display: flex;
+	gap:10px;
+}
+.hamburguesa{
+	display: none;
+	cursor: pointer;
+	
+}
+.clasificacion1{
+	display: none;
+	
+}
+
+@media(max-width:1000px){
+	
+	header .clasificacion{
+	flex-direction: column;
+    gap: 10px;
+    position: relative;
+   
+
+}
+
+header .conjuntoburguer{
+	gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+	
+}
+
+header .hamburguesa{
+	display: flex;
+    align-items: center;
+   
+}
+
+header .clasificacion{
+	cursor: pointer;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+	
+}
+.menu{
+	flex: 1 1 20%;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+.primeraparte{
+	display: flex;
+	flex-direction: column-reverse;
+}	
+
+.textgeneral{
+	width: 100%;
+}
+
+
+.primeraparte .title1{
+	font-size: 25px;
+}
+.imagengrande img{
+	
+    height: 450px;
+	object-fit: cover;
+}
+.segundaparte{
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+}
+.conjuntoimagenes{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+	
+}
+.rosas{
+	width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+	
+
+}
+.segundaparte .overlay1{
+	width: 100%;
+    height: 100%;
+	
+}
+footer{
+	display: flex;
+	width: 100%;
+
+			
+}
+.texto{
+	display: flex;
+	gap:10px;
+}
+footer .texto1{
+	font-size: 18px;
+			
+
+}
+footer .texto2{
+	font-size: 10px;
+			
+
+}
+	
+
+
+}
+	
+	
+	
+	
+
+
+	
+
+
+
+
+

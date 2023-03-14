@@ -21,7 +21,7 @@ checkbox.addEventListener("click", function(){
 })
 
 const icono_burger = document.getElementById("burger");
-console.log(burger);
+console.log(icono_burger);
 
 const menu = document.querySelector(".menu");
 console.log(menu);

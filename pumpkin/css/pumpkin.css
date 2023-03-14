@@ -1,0 +1,324 @@
+*{
+	margin: 0;
+	padding: 0;
+	border-box: 0;
+	
+}
+
+
+body{
+	width: 100vh;
+	background-color: #000;
+}
+
+.calabaza{
+
+	width: 686px;
+    height: 622px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    justify-content: center;
+    
+    position: relative;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    top: 150px;
+    padding-left: 500px;
+    animation-name: halopumpkin;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+   
+}
+.pumpkin{
+ --width: 200px;
+ --height: 150px;
+ --bgcolor: #ff872e;
+
+ width: var(--width);
+ height: var(--height);
+ background: #FF872E;
+ border-radius: 50% 40% / 45% 60%;
+
+}
+
+.facecontainer{
+	width: 75%;
+	margin: auto;
+	height: 100%;
+	border-radius: 50%;
+	border: 5px solid #ef5507;
+	border-top: 0;
+	border-bottom: 0;
+}
+.face::before{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	border:2px solid #ef5507 ;
+	background: #ef5507;
+	border-radius: 50%;
+	position: absolute;
+	left: 48%;
+}
+.face{
+	display: flex;
+	flex-direction: column;
+	transform: translateY(25px);
+}
+
+.tronco{
+	
+	--stem-clip: polygon(60% 0, 80% 0, 35% 35%, 100% 80%, 80% 100%, 20% 100%, 50% 80%, 0 35%);
+    background: #03412c;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 25px);
+    -webkit-clip-path: var(--stem-clip);
+    clip-path: var(--stem-clip);
+
+
+
+}
+
+.tronco::after{
+
+    content: "";
+    display: block;
+    background: #07845c;
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: var(--stem-clip);
+    clip-path: var(--stem-clip);
+    transform: translate(6px, 0);
+
+
+
+}
+
+
+
+.eyes{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: auto;
+
+}
+
+.leftgap{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #640002;
+}
+.leftgap{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+    background: #640002;
+    position: relative;
+    transform: translate(-0px,10px);
+
+}
+
+
+
+
+.rightgap{
+
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:#640002;
+	position: relative;
+
+	transform: translate(-0px,10px);
+}
+
+
+.mouth-container{
+	
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.nose{
+	width: 25px;
+	height: 25px;
+	background:#640002;
+	clip-path: polygon(50% 0, 0 100%, 100% 100%);
+
+
+	transform: translateY(-10px);
+
+}
+
+
+.mouth{
+	width: 105px;
+	height: 35px;
+	background: #640002;
+	border-radius: 0 0 50% 50% / 0 0 100% 100%;
+	position: relative;
+	overflow: hidden;
+	--bgcolor: orange;
+
+	
+	
+	}
+
+
+.mouthafter1::after{
+	 content: "";
+    height: 13px;
+    width: 11px;
+    background: var(--bgcolor);
+    position: absolute;
+    top: 87%;
+    left: 48%;
+    box-shadow: 40px 0 0 var(--bgcolor) 20px 15px var(--bgcolor);
+}
+	
+.mouthafter2::after{
+	content: "";
+    height: 13px;
+    width: 11px;
+    background: var(--bgcolor);
+    position: absolute;
+    top: 62%;
+    left: 69%;
+    box-shadow: 40px 0 0 var(--bgcolor) 20px 15px var(--bgcolor);
+
+
+}
+
+.mouthafter3::after{
+	 content: "";
+    height: 13px;
+    width: 11px;
+    background: var(--bgcolor);
+    position: absolute;
+    top: 52%;
+    left: 68%;
+    box-shadow: 40px 0 0 var(--bgcolor) 20px 15px var(--bgcolor);
+
+}
+
+.leftgap{
+	border-left: 5px solid #dc4202;
+}
+
+.eye{
+	bottom: 2px;
+	left: 2px;
+}
+
+.rightgap{
+	border-right: 5px solid #dc4202;
+}
+
+&.left.eye::after{
+	bottom: 2px;
+	right: 4px;
+}
+
+&.right.eye::after{
+	top: 2px;
+	right: 4px;
+}
+
+.eye{
+	background:#18AD3B;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 5px;
+   left: 4px;
+}
+
+.eye::before{
+	content: "";
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: #31ff3d;
+	top: 4px;
+	left: 4px;
+	position: absolute;
+	border-radius: 50%;
+	transform: rotate(450deg);
+}
+
+
+.eye::after{
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	background: #640002;
+	border-radius: 50%;
+	border:  2px solid #31ff3d;
+	position: absolute;
+	z-index: 2;
+}
+
+
+
+.halo{
+	 display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 293px;
+    padding-left: 716px;
+    position: relative;
+}
+.halopumpkin{
+	
+	width:274px;
+	height: 33px;
+	background: radial-gradient(#faa72a 2%,#7909fa00);
+	border-radius: 50%;
+	position: relative;
+	mix-blend-mode: screen;
+	padding-top: 126px;
+	padding-bottom: 100px;
+	
+
+
+   animation-name: halopumpkin;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+
+
+   }
+
+   @keyframes halopumpkin {
+   0%{
+      transform:translateY(0px);
+      opacity: 100%;
+     
+
+   }
+   50%{
+      transform: translateY(-50px);
+     
+      
+
+   }
+   100%{
+      transform: translateY(0px);
+     opacity: 0%;
+   }
+   }

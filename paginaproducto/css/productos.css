@@ -1,0 +1,324 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&display=swap');
+
+/* AJUSTES GENERALES */
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bodoni Moda';
+    
+}
+   
+    
+
+
+/* ENCABEZADO */
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 0.5px solid #000;
+    
+}
+
+
+
+ ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.listauno{
+    display: flex;
+    justify-content: flex-end;
+}
+.listauno .ul{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* SECCION PRINCIPAL */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.listados .ul{
+    display: flex;
+    
+}
+/* grupo1 */
+
+
+.section1{
+    display: flex;
+}
+.conjunto1{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.conjunto{
+    display: flex;
+    flex-direction: column;
+
+}
+#icono1{
+    width: 100%;
+    height: 50%;
+    pointer-events:auto;
+    cursor: pointer;
+}
+#icono2, #icono3, #icono4 {
+    width: 50%;
+}
+.batimg{
+    display: flex;
+    cursor: pointer;
+}
+
+.productoprecio{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 85px;
+}
+
+.text h1{
+    font-size: 40px;
+}
+.text h2{
+    font-size: 30px;
+
+}
+.text p{
+    font-size: 20px;
+
+}
+a {
+    border: 1px solid #000;
+    background-color: #0202;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* grupo2 */
+.section2{
+    display: flex;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.section2 .subconj{
+    cursor: grab;
+}
+
+/* .bat2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+} */
+
+
+.subconj{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+}
+.vacio{
+    display: flex;
+    gap:20px;
+}
+.iconos{
+    width: 100%;
+    height: 100%;
+}
+
+/* grupo3 */
+footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+#modal{
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: beige;
+  }
+  
+
+.mod {
+    width: 60%;
+    height: 60%;
+    background-image: url("../imagenes/paletaa.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+
+    margin: auto;
+    top: 100px;
+}
+
+.botones{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-izq:hover{
+    background-color: silver;
+}
+.btn-der:hover{
+    background-color: silver;
+}
+.btn-der{
+    width: 60px;
+    height: 530px;
+
+}
+.btn-izq{
+    width: 60px;
+    height: 520px;
+
+
+}
+
+#popup:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.iconomodal{
+    width: 50%;
+    height: 50%;
+}
+.close{
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    bottom: 586px;
+    left: 1200px;
+    outline: unset;
+    border-radius: 100px;
+    background-color: pink;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    pointer-events: auto;
+  }
+
+
+@media (max-width: 750px){
+   .cabecera .h1{
+    font-size:30px;
+   }
+    .cabecera {
+        display: flex;
+        flex-direction: column;
+    }
+     .listauno ul{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+      .listados ul{
+        font-size: 12px;
+
+    }
+    .section1{
+      
+        display: flex;
+        flex-direction: column;
+    }
+    .productoprecio{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .conjunto1{
+        width: 100%;
+        height: 100%;
+
+        
+
+    }
+    .text{
+        font-size: 20px;
+
+    }
+    
+    .section2{
+        width: 60%;
+        height: 60%;
+        
+
+    }
+    .vacio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto h1{
+        font-size: 30px;
+
+    }
+    .texto h2{
+        font-size: 20px;
+    }
+    
+    footer{
+        text-align: center;
+        
+    }
+
+
+}
+
+
+
+
+/*@media (max-width: 1024px){
+    .conjunto1{
+        width: 100%;
+        height: 100%;
+
+        
+
+    }
+    .text{
+        font-size: 10px;
+
+    }
+    
+    .section2{
+        width: 60%;
+        height: 60%;
+
+    }
+
+    
+
+
+}*/

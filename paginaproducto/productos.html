@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/fcde17cf77.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./css/productos.css">
+	<title>cosmeticos</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <h1>MAKEUP-SHOP</h1>
+        <nav class="listauno">
+            <ul>
+                <li>Products</li>
+                <li>About</li>
+                <li>My acount</li>
+                <li>Cart</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section class="listados">
+        <ul>
+            <li>HOME</li>
+            <li>MAKE UP HOUSE</li>
+            <li>EYE SHADOWS</li>
+        </ul>
+    </section>
+       
+
+    <section class="section1">
+        <article class="conjunto1">
+           
+            <img onclick="window.modal.showModal();" id="icono1" src="imagenes/paletaa.jpg">
+            <div class="batimg">
+                <img id="icono2"src="imagenes/paletab.jpg">
+                <img id="icono3"src="imagenes/paletac.jpg">
+                <img id="icono4"src="imagenes/paletad.jpg">
+            
+            </div>
+        
+        </article>
+            <!-- CARTA DE PRODUCTO  -->
+        <article class="productoprecio">
+        <div class="text">
+            <h1>Eye-shadow</h1>
+            <h2>20€</h2>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Asperiores porro possimus libero ea molestiae accusantium explicabo neque iste, aut minima quos voluptatibus quam reprehenderit et? 
+            Magnam unde mollitia expedita quo?</p>
+            <a href=#popup> ADD TO CARD</a>
+        </div>
+        </article>
+    </section>
+
+        
+
+        <h1>You may also like</h1>
+        <section class="section2">
+            <div class="vacio">
+                <article class="subconj">
+                    <img class="iconos" src="imagenes/productoa.jpg">
+                    <div class="texto">
+                            <h1>Eye-shadow</h1>
+                            <h2>20€</h2>
+                    </div>
+                </article>
+                <article class="subconj">
+                    <img class="iconos" src="imagenes/productob.jpg">
+                    <div class="texto">
+                        <h1>Eye-shadow</h1>
+                        <h2>20€</h2>
+                    </div>
+                </article>
+                <article class="subconj">
+                    <img class="iconos" src="imagenes/productoc.jpg">
+                <div class="texto">
+                    <h1>Eye-shadow</h1>
+                    <h2>20€</h2>
+                </div>
+                </article>
+                <article class="subconj">
+                    <img class="iconos" src="imagenes/productod.jpg">
+                <div class="texto">
+                    <h1>Eye-shadow</h1>
+                    <h2>20€</h2>
+                </div>
+                </article>
+                
+                <article class="subconj">
+                    <img class="iconos" src="imagenes/productoe.jpg">
+                <div class="texto">
+                    <h1>Eye-shadow</h1>
+                    <h2>20€</h2>
+                </div>
+                </article>
+                <article class="subconj">
+                    <img class="iconos" src="imagenes/productof.jpg">
+                <div class="texto">
+                    <h1>Eye-shadow</h1>
+                    <h2>20€</h2>
+                </div>
+                </article>
+            </div>
+        </section>
+    
+</main>
+<footer>
+   <h1> Horario: Lunes a viernes de 08:00am a 17:00pm. | Tel: +502 2212 9728 | Dirección: Av. Serrano Orive, 6, España</h1> 
+    <h1>© Copyright 2023 Dafne Serrano</h1>
+</footer>
+
+
+
+
+<dialog id="modal">
+    <div class="mod">
+        <div class="botones">
+            <a class="btn-izq"></a>
+            <a class="btn-der"></a>
+        </div>
+        <a class="close" onclick="window.modal.close();" href="#">X</a>
+
+    </div>
+</dialog>
+<script src="js/arrastre.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/cambioimagen.js"></script>"
+
+</body>
+
+</html>

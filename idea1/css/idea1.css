@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+}
+.mostrar{
+    width: 800px;
+
+}
+
+.caja{
+   
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    transition: all 0.5s ease;
+
+    background-color: beige;
+    background-size: cover;
+    background-position: 50%;
+
+    position: relative;
+
+   
+}
+.caja1{
+   
+    background-image: url("../imagenes/flores1.jpg");
+
+}
+.caja2{
+    
+    background-image:  url("../imagenes/flores2.jpg");
+  
+
+}
+.caja3{
+    
+    background-image: url("../imagenes/flores3.jpg");
+   
+
+}
+
+.caja:hover{
+    background-color: wheat;
+    flex-grow: 4.6;
+}
+
+/*no entiendo como teniendo la misma propiedad las 3 solo se aplica a la primera tarjeta*/
+.overlay1{
+    position: absolute;
+    opacity: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(238, 130, 238, 0.638);
+    transition: all 0.5s ease-in-out;
+   
+    
+  
+}
+
+.overlay1 h1{ 
+    background-color: white;
+    text-align: center;
+    opacity: 0;
+}
+
+.overlay1:hover{
+    opacity: 1;
+}
+
+.overlay{
+    position:absolute;
+    top:100%;
+    opacity: 0;
+
+    width: 37%;
+    height: 85%;
+    transition: all 0.5 ease-in-out;
+
+}
+
+
+.mostrar{
+   
+    width: 50%;
+
+}
+a{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+a:hover{
+    background-color: plum;
+}
+a h1{
+    color: white;
+    font-size: 20px;
+}

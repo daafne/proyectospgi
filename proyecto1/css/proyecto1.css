@@ -7,11 +7,8 @@
 
 }
 
-
-
 body{
 	display: flex;
-	background-color: #343353;
 	justify-content: flex-end;
 	
 	
@@ -19,24 +16,21 @@ body{
 
 .menutodo{
 	background-color: #343353;
-	width: 20vw;
+	width: 13vw;
 	position: fixed;
 	left: 0px;
+	right: 0;
 }
-	
-
 
 .menu{
 	
-background-color: #343353;
 flex-direction: column;
 height: 100vh;
-width: 20vw;
+width: 13vw;
 display: flex;
 padding: 30px;
 	
 }
-
 
 .menu h1{
 	
@@ -62,7 +56,6 @@ padding: 30px;
 
 	 
 }
-	  
 
 .cliente{
 	width: 200px;
@@ -73,11 +66,14 @@ padding: 30px;
 .conjunto{
 	display: flex;
 	flex-direction: column;
-	width: 80vw;
+	width: 87vw;
+	background-color: #343353;
+	height: 100vh;
 }
 	
-	
-	
+.conjunto section{
+	padding: 50px 187px;
+}
 	
 .user{
 	width: 80px;
@@ -94,21 +90,13 @@ align-items: center;
 	width: 24px;
 }
 
-.overlay{
-	position: absolute;
-	z-index: -1;
-  }
-
 .layer{
 	position:relative;
 }
 #linea{
 	bottom: 367px;
 	right: 274px;
-  }
-  
-  
-
+}
 
 #curva{
 	top: 211px;
@@ -117,7 +105,7 @@ align-items: center;
 #triangulo{
 	left: 433px;
 	bottom: 307px;
-  }
+}
 
 
 #lila{
@@ -125,22 +113,22 @@ align-items: center;
 }
 
 
-.imagenusertitulo{
-
+.portada{
 	
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	gap: 30px;
-	height: 100vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 85px;
+height: 100vh;
+position: relative;
 
 }
-.imagenusertitulo h1 {
+.portada h1 {
 	color: white;
 	font-size: 23px;
 }
-.imagenusertitulo h2{
+.portada h2{
 	color: white;
 	font-size: 20px;
 }
@@ -169,12 +157,13 @@ align-items: center;
     background-color: pink;
 }
 
-.cruz{
+.flechaabajo{
 	width: 30px;
 	height: 30px;
-	top: 256px;
-	position: relative;
+	position: absolute;
 	cursor: pointer;
+	bottom: 0px;
+	color: white;
 }
 
 
@@ -244,7 +233,7 @@ align-items: center;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	padding: 110px;
+	
 	gap: 20px;
 }
 
@@ -404,7 +393,7 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 .experience{
 	width: 100%;
 	background-color: white;
-	padding: 60px;
+	
 }
 .tituloe{
 	font-size: 30px;
@@ -449,7 +438,6 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	background-color: white;
 	flex-direction: column;
 	width: 100%;
-	padding: 60px;
 	gap: 10px;
   
 }
@@ -458,10 +446,12 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	font-size: 30px;
 }
 
+
 .pestañastodo{
 	display: flex;
 	font-size: 20px;
 	gap: 17px;
+	cursor: pointer;
 }
 .imagenesworks{
 	display: flex;
@@ -469,29 +459,84 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	align-items: center;
 	gap: 20px;
 }
-
+.tarjeta{
+	position: relative;
+	width: calc(100%/3 - 20px);
+}
 .w1{
+
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	width: 300px;
-	height: 300px;
+	width: 30%;
+	height: 30%;
 	border-radius: 20px;
 }
 .vol1{
+	
 	display: flex;
+	flex-wrap: wrap;
 	gap: 20px;
 	
 	
 }
-.vol2{
-	display: flex;
-	gap: 20px;
+.vol1 img{
+	width: 100%;
+    height: 100%;
 }
+
+
+.croja{
+	width: 101px;
+	height: 28px;
+	border-radius: 20px;
+	background-color: #FA4D61;
+	position: absolute;
+	top: 0px;
+	
+	
+}
+
+.overlay1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	opacity: 0;
+	background-color: rgba(108, 227, 181, 0.533);
+	justify-content: center;
+	border-radius: 20px;
+  }
+
+
+.overlay1 h1{
+	font-size: 20px;
+	position: relative;
+	left: 20px;
+}
+.overlay1:hover{
+	transition: all 1s ease;
+	opacity: 1;
+}
+.vol1 .imagenestarjeta{
+	
+	width: 10%;
+	height: 100%;
+	position: relative;
+	top: 50px;
+	left: 25px;
+	
+}
+.texto1{
+	display: flex;
+	flex-direction: column;
+}
+
 .pricingplans{
 	display: flex;
 	flex-direction: column;
 	background-color: white;
 	width: 100%;
-	padding: 60px;
 	gap: 40px;
   
 	
@@ -504,7 +549,7 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	align-items: center;
 	padding: 20px;
 	gap: 20px;
-  }
+}
 .precionumero{
 	display: flex;
 	gap:10px;
@@ -520,6 +565,23 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	gap:5px;
 }
 
+.premiumm{
+	background-color: #706CE3;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    right: 80px;
+    bottom: 20px;
+}
+
+.premiumm h1{
+	
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	font-size: 15px;
+}
+
 .imgprice{
 	width: 100px;
 }
@@ -529,7 +591,10 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	padding: 10px;
 	color: white;
 }
-
+.getstarted:hover{
+	cursor: pointer;
+	background-color: pink;
+}
 .clientsreviews{
 	background-color: white;
 	display: flex;
@@ -553,20 +618,107 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	gap: 20px;
 
 }
-.imguser3{
-	width: 110px;
+
+.secundaria{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    gap: 40px;
+    padding: 15px;
+    
 }
-.frase{
-	margin: auto;
-    font-size: 10px;
-    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-    padding: 30px;
-    border-radius: 50px;
+.derecha{
+    transform:translateX(0px);
+    transition: all 1s ease;
+
 }
+.izquierda{
+    transform:translateX(-250px);
+    transition: all 1s ease;
+}
+.capamascara{
+    background-color: violet;
+    width: 250px;
+    overflow-x: hidden;  
+    
+}
+.users{
+    display: flex;
+    
+    width: 500px;
+}
+    
+.user1{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+  
+.user2{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.iconitou{
+    width: 200px;
+    height: 200px;
+}
+.textous{
+    width: 200px;
+    height: 100px;
+
+    border-radius: 20px;
+    gap:20px;
+
+    background-color: honeydew;
+    
+    display: flex;
+    align-items: center;
+}
+
+.destello{
+    width: 30px;
+    height: 30px;
+}
+.estrellas{
+    display: flex;
+}
+.estrella{
+    width: 30px;
+    height: 30px;
+}
+.cajabotones{
+    display: flex;
+    gap:15px;
+}
+
+.botonrojo_izq{
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: coral;    
+}
+.botonrojo_der{
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: coral;
+    
+}
+
 .marcas{
 	gap: 29px;
 	display: flex;
 	flex-direction: column;
+	padding: 20px;
 }
 .filan1{
 	display: flex;
@@ -609,8 +761,26 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	padding: 3px;
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
+.dentroimpost:hover{
+	width: 110%;
+	cursor: pointer;
+}
 	
-
+.cajaroja{
+	background-color: #FE4C62;
+	width: 100px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	position: relative;
+	right: 90px;
+}
+.cajaroja h1{
+	font-size: 10px;
+}
 .titlepost{
 	font-size: 20px;
 }
@@ -631,8 +801,6 @@ progress::-moz-progress-bar { background: #706CE3; }*/
     display: flex;
     flex-direction: column;
 }
-
-
 	
 .gettexto{
 	padding: 50px;
@@ -652,18 +820,20 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	align-items: center;
 	justify-content: space-around;
 	padding: 20px;
+	gap: 15px;
 	
 }
+
 .gettextconj{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  }
+}
 .mapget{
 	width: 167px;
-	position:absolute;
+	position: relative;
+	bottom: 0px;
 }
-
 
 .conjunto2{
 	gap:20px;
@@ -681,7 +851,7 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	border-radius: 30px;
 	padding: 20px;
-  }
+}
 	
 
 .borderinput{
@@ -689,10 +859,7 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	border-style: none;
 	padding: 15px;
 	background-color: beige;
-  }
-
-
-
+}
 
 .botonget{
 	background-color: #FE4C62;
@@ -704,3 +871,210 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 	color: white;
 	text-align: center;
 }
+.botonget:hover{
+	cursor: pointer;
+	background-color: pink;
+}
+
+
+@media(max-width:1400px){
+.titleab{
+	
+	text-align: center;
+	font-size: 80px;
+		
+}
+.aboutme h1{
+		
+	text-align: center;
+		
+		
+}
+.aboutme{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+		
+}
+.tituloimagenbocadillo{
+	display: flex;
+	flex-direction: column;
+		
+	width: 80%;
+	height: 100%;
+}
+.textoboton2{
+	align-items: center;
+}
+	
+.titulosvisitas{
+	display:none;
+}
+
+.services{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	  
+}
+
+.services .cajaservices{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.services .titulo{
+	text-align: center;
+	font-size: 80px;
+}
+.caja1{
+	height: 100%;
+	width: 100%
+}
+.caja1 img{
+	width: 30px;
+	height: 30px;
+}
+
+.caja1 h1{
+	font-size: 15px;
+}
+
+.customjob{
+
+	align-items: center;
+}
+
+.experience{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 128%;
+}
+.experience .tituloe{
+	text-align: center;
+	font-size: 80px;
+}
+.conjuntoexperience{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	  
+}
+
+.recentworks h1{
+	text-align: center;
+	font-size: 80px;
+}
+
+.pestañastodo h1{
+	text-align: center;
+	font-size: 30px;		
+}
+
+.vol1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 2000px;
+	  
+}
+
+.overlay1{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+}
+.croja{
+	width: 250px;
+	height: 50px;
+	text-align: center;
+}
+.croja h1{
+		
+	font-size: 30px;
+    padding: 10px;
+}
+.texto1 h1{
+	font-size: 25px;
+
+}
+.pricingplans{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+		
+
+}
+	
+.pricingplans .titlep{
+	font-size: 80px;
+
+}
+.preciosconjunto{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+
+.textclients{
+
+	font-size: 80px;
+}
+
+.users{
+	
+	height: 100%;
+}
+
+.marcas{
+	display: none;
+}
+
+.latestposts .textlasts{
+ 	font-size: 80px;
+ 	text-align: center;
+}
+.imagenespost{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.cajaroja h1{
+	font-size: 20px;
+}
+.dentroimpost .imgp{
+	width: 500px;
+	height: 500px;
+}
+.gettexto{
+	font-size: 80px;
+	text-align: center;
+
+}
+.conjunto1{
+	display: flex;
+	flex-direction: column;
+}
+
+}
+	
+
+	
+
+
+	
+	
+	
+	
+	

@@ -4,12 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/fcde17cf77.js" crossorigin="anonymous"></script>
-	<link
+	
+    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+
     <link rel="stylesheet" href="./css/proyecto1.css" type="text/css">
-	<title>Portfolioproyecto</title>
+	
+    <title>Portfolioproyecto</title>
 </head>
 
 <body>
@@ -48,7 +53,8 @@
     </section>
 </header>
    <main class="conjunto">
-    <section class="imagenusertitulo">
+    
+    <section class="portada">
         <div id="scene" class="overlay" data-relative-input="true">
             <!--  lineaamarilla -->
              <svg data-depth="0.2" id="linea" class="layer" width="30" height="218" viewBox="0 0 129 218" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3 216L126 2" stroke="#25EFBF" stroke-width="5"/></svg>
@@ -63,7 +69,7 @@
         </div>
         
         <img class="user" src="imagenes/user.svg">
-        <h1>Bolby Doe</h1>
+        <h1>Dafne Serrano</h1>
         <div class="animation">
             <p>I'm a </p>
             <p class="recutext animate__animated animate__flipInX" > Front-End developer</p>
@@ -77,20 +83,20 @@
             <img  class="icono" src="imagenes/pinterest.png">
         </div>
         <a class="boton"> <h1>Hire me</h1> </a>
-        <img  class="cruz" src="imagenes/cruz.png">
+        <i class="fa-solid fa-arrow-down flechaabajo"></i>
     </section>
 
 
 
     
    <section class="aboutme">
-        <h1>ABOUT ME</h1>
-    <div class="tituloimagenbocadillo">
-        <img class="user2" src="imagenes/user2.svg">
+        <h1 class="titleab" data-aos="fade-up" data-aos-duration="1500">ABOUT ME</h1>
+        <div class="tituloimagenbocadillo" data-aos="fade-up" data-aos-duration="1500">
+            <img class="user2" src="imagenes/user2.svg">
         
-    <div class="sombra">
-        <div class="bocadillo">
-            <div class="textoboton2">
+        <div class="sombra">
+            <div class="bocadillo">
+                <div class="textoboton2">
                 <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             Aliquid rem repellat autem error facere porro saepe quis omnis aspernatur quo blanditiis quos odio tempore explicabo, dolorem laborum illum repudiandae praesentium?</h1>
             <a class="boton1"><h1>DOWNLOAD CV</h1></a>
@@ -103,19 +109,15 @@
                 <h1>85%</h1> 
             </div> 
             <div class="progress">
-                <div  class="progressbar a"  style="width:100%">
-                  
-                </div>
-              </div>
+                <div class="progressbar a"  style="width:100%"></div>
+            </div>
             
             <div class="tituloporc">
                 <h1>UI/UX design</h1>
                 <h1>95%</h1>
             </div>
             <div class="progress">
-                <div  class="progressbar b"  style="width:100%">
-              
-            </div>
+                <div  class="progressbar b"  style="width:100%"></div>
             </div>
             
             <div class="tituloporc">
@@ -123,16 +125,14 @@
                 <h1>70%</h1>
             </div>
             <div class="progress">
-                <div  class="progressbar c"  style="width:100%">
-              
+                <div  class="progressbar c"  style="width:100%"></div>
             </div>
-          </div>
-          </div>
-    </div>
-    </div>
+        </div>
+        </div>
+        </div>
         
 
-        <article class="titulosvisitas">
+        <article class="titulosvisitas" data-aos="fade-up" data-aos-duration="1500">
             
             <div class="conjuntoiconotexto">
                      <img class="iconos3" src="imagenes/fuego.png">
@@ -170,13 +170,13 @@
    </section>
 
    <section class="services">
-     <div class="titulo"><h1>SERVICES</h1></div>
-        <div class="cajaservices">
-            <div  id="ui" class="caja1">
-                <img src="imagenes/service-1.svg">
-                <h1>UI/UX design</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere rerum soluta vel, vero similique ratione est doloribus, perspiciatis, at nam sapiente autem dolorem. Natus quia, numquam iste enim pariatur accusamus?</p>
-            </div>
+        <div class="titulo"><h1 data-aos="fade-up" data-aos-duration="1500">SERVICES</h1></div>
+            <div class="cajaservices" data-aos="fade-up" data-aos-duration="1500">
+                <div id="ui" class="caja1">
+                    <img src="imagenes/service-1.svg">
+                    <h1>UI/UX design</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere rerum soluta vel, vero similique ratione est doloribus, perspiciatis, at nam sapiente autem dolorem. Natus quia, numquam iste enim pariatur accusamus?</p>
+                </div>
             <div id="deve" class="caja1">
                 <img src="imagenes/service-2.svg">
                 <h1>Web Development</h1>
@@ -188,21 +188,20 @@
                 <h1>Photography</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere rerum soluta vel, vero similique ratione est doloribus, perspiciatis, at nam sapiente autem dolorem. Natus quia, numquam iste enim pariatur accusamus?</p>
             </div>
-        </div>
-        <div class="customjob">
-            <h1>Looking for a custom job? Click here to contact me!</h1>
-        </div>
+            </div>
+            <div class="customjob" data-aos="fade-up" data-aos-duration="1500">
+                <h1>Looking for a custom job? Click here to contact me!</h1>
+            </div>
     </section>
 
     <section class="experience">
-            <h1 class="tituloe">Experience</h1>
+            <h1 class="tituloe" data-aos="fade-up" data-aos-duration="1500">Experience</h1>
         <div class="conjuntoexperience">
-            <div class="cajaexp1">
+            <div class="cajaexp1" data-aos="fade-up" data-aos-duration="1500">
                 <div class="exp1">
                     <div class="iconofecha">
                         <img class="e" src="imagenes/birrete.png">
-                        <h2>2019-present</h2>
-                    </div>
+                        <h2>2019-present</h2></div>
                     <h1>Academic Degree</h1>
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis harum molestiae soluta similique delectus aperiam quas, ut ab commodi temporibus ducimus libero illum quos? Nostrum, ducimus. Dicta, necessitatibus molestias!</h2>
                 </div>
@@ -223,28 +222,28 @@
                     <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi provident excepturi est, nostrum incidunt, alias nemo eaque voluptate consectetur numquam officiis fugiat. Saepe ipsa obcaecati amet eum est iusto commodi.</h2>
                 </div>
             </div>
-            <div class="cajaexp2">
+            <div class="cajaexp2" data-aos="fade-up" data-aos-duration="1500">
                 <div class="exp1">
-                     <div class="iconofecha">
+                <div class="iconofecha">
                         <img class="m" src="imagenes/maletin.png">
                         <h2>2019-present</h2>
-                    </div>
+                </div>
                     <h1>Web Designer</h1>
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis harum molestiae soluta similique delectus aperiam quas, ut ab commodi temporibus ducimus libero illum quos? Nostrum, ducimus. Dicta, necessitatibus molestias!</h2>
                 </div>
                 <div class="exp1">
-                    <div class="iconofecha">
+                <div class="iconofecha">
                         <img class="m" src="imagenes/maletin.png">
                         <h2>2017-2013</h2>
-                    </div>
+                </div>
                     <h1>Front-End Developed</h1>
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis harum molestiae soluta similique delectus aperiam quas, ut ab commodi temporibus ducimus libero illum quos? Nostrum, ducimus. Dicta, necessitatibus molestias!</h2>
                 </div>
                 <div class="exp1">
                     <div class="iconofecha">
                         <img class="m" src="imagenes/maletin.png">
-                        <h2>2013-2009</h2>
-                    </div>
+                        <h2>2013-2009</h2></div>
+
                     <h1>Back-End Developed</h1>
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis harum molestiae soluta similique delectus aperiam quas, ut ab commodi temporibus ducimus libero illum quos? Nostrum, ducimus. Dicta, necessitatibus molestias!</h2>
                 </div>  
@@ -255,32 +254,96 @@
     </section>
 
     <section class="recentworks">
-            <h1>Recent works</h1>
-        <article class="pestañastodo">
-            <h1>Everything</h1>
-            <h1>Creative</h1>
-            <h1>Art</h1>
-            <h1>Design</h1>
-            <h1>Branding</h1>
-        </article>
+        <h1 data-aos="fade-up" data-aos-duration="1500">Recent works</h1>
+      
+        <article class="pestañastodo">  
+           
+            <h1 class="todo" data-filter="todo" data-aos="fade-up" data-aos-duration="1500">Everything</h1>
+            <h1 class="creative" data-filter="creative" data-aos="fade-up" data-aos-duration="1500">Creative</h1>
+            <h1 class="art" data-filter="art" data-aos="fade-up" data-aos-duration="1500">Art</h1>
+            <h1 class="design" data-filter="design" data-aos="fade-up" data-aos-duration="1500">Design</h1>
+            <h1 class="branding" data-filter="branding" data-aos="fade-up" data-aos-duration="1500">Branding</h1>
+        </article> 
+        
         <article class="imagenesworks">
-            <div class="vol1">
-                <img  class="w1"src="imagenes/1.svg">
-                <img class="w1" src="imagenes/2.svg">
-                <img class="w1"src="imagenes/3.svg">
-            </div>
-            <div class="vol2">
-                <img class="w1" src="imagenes/4.svg">
-                <img class="w1" src="imagenes/5.svg">
-                <img class="w1" src="imagenes/6.svg">
+            
+            <div class="vol1" data-aos="fade-up" data-aos-duration="1500">
+
+                <article class="tarjeta" data-filter="creative">
+                    <img class="creative w1" src="imagenes/1.svg">
+                    <div class="overlay1">
+                        <div class="croja"><h1>Creative</h1></div>
+                        <div class="texto1">
+                            <h1>Project managment Ilustration</h1>
+                            <img class="imagenestarjeta" src="imagenes/lupaestrella.png">
+                        </div> 
+                    </div>
+                </article>
+                <article class="tarjeta"data-filter="art">
+                    <img class="art w1" src="imagenes/2.svg">
+                    <div class="overlay1">
+                            <div class="croja"><h1>Art</h1></div>
+                            <div class="texto1">
+                                <h1>Guest App Walkthrought Screens</h1>
+                                <img class="imagenestarjeta" src="imagenes/puntos.png">
+                            </div>
+                    </div> 
+                </article>
+                <article class="tarjeta"data-filter="design">
+                    <img class= "design w1" src="imagenes/3.svg">
+                    <div class="overlay1">
+                        
+                            <div class="croja"><h1>Design</h1></div>
+                            <div class="texto1">
+                                <h1>Delivery App Wireframe</h1>
+                                <img class="imagenestarjeta" src="imagenes/camaravideo.png">
+                            </div>
+                    </div>
+                </article>
+                <article class="tarjeta"data-filter="branding">
+                    <img class="branding w1" src="imagenes/4.svg">
+                    <div class="overlay1">
+                        
+                            <div class="croja"><h1>Branding</h1></div>
+                            <div class="texto1">
+                                <h1>Onboarding Motivation</h1>
+                                <img class="imagenestarjeta" src="imagenes/musica.png">
+                            </div>
+                    </div> 
+                </article>
+
+                <article class="tarjeta" data-filter="creative">
+                    <img class="creative w1" src="imagenes/5.svg">
+                    <div class="overlay1">
+                    
+                        <div class="croja"><h1>Branding</h1></div>
+                            <div class="texto1">
+                                <h1>Onboarding Motivation</h1>
+                                <img class="imagenestarjeta" src="imagenes/galeria.png">
+                            </div>
+                    </div> 
+                </article>
+
+                <article class="tarjeta" data-filter="art">
+                    <img class="art w1" src="imagenes/6.svg">
+                    <div class="overlay1">
+                        
+                        <div class="croja"><h1>Art</h1></div>
+                        <div class="texto1">
+                            <h1>Game Store App Concept</h1>
+                            <img class="imagenestarjeta" src="imagenes/conexion.png">
+                        </div>
+                    </div>
+                </article>
+               
             </div>
         </article>
     </section>
     
     <section class="pricingplans">
-        <h1>Pricing Plans</h1>
+        <h1 class="titlep" data-aos="fade-up" data-aos-duration="1500">Pricing Plans</h1>
         <article class="preciosconjunto">
-            <div class="precio1">
+            <div class="precio1" data-aos="fade-up" data-aos-duration="1500">
                 <img class="imgprice" src="imagenes/price-1.svg">
                 <h1>Basic</h1>
                 <h2>A simple option but powerful to manage your business</h2>
@@ -288,15 +351,16 @@
                 <div class="precionumero"><h2>$</h2><h1>9</h1><h2>Month</h2></div>
                 <a class="getstarted"><h1>Get Started</h1></a>
             </div>
-           <div class="precio1">
+           <div class="precio1" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="premiumm"><h1>Recommended</h1></div>
                     <img class="imgprice" src="imagenes/price-2.svg">
                     <h1>Premium</h1>
                     <h2>Unlimited products including apps integrations and more features</h2>
                     <h3> Mon-Fri Support</h3>
                     <div class="precionumero"><h2>$</h2><h1>49</h1><h2>Month</h2></div>
                     <a class="getstarted"><h1>Get Started</h1></a>
-                </div>
-            <div class="precio1">
+            </div>
+            <div class="precio1" data-aos="fade-up" data-aos-duration="1500">
                     <img class="imgprice"src="imagenes/price-3.svg">
                     <h1>Ultimate</h1>
                     <h2>A wise option for large companies and individuals</h2>
@@ -309,26 +373,79 @@
     </section>
 
     <section class="clientsreviews">
-        <h1  class="textclients">Clients & Reviews</h1>
-        <article class="clientsall">
-            <article class="conjuntoimgtext">
-                <img class="imguser3" src="imagenes/user3.svg">
-                <h1>Jonh Doe</h1>
-                <h2>Product designer and Dribble</h2>
+        <h1 class="textclients" data-aos="fade-up" data-aos-duration="1500">Clients & Reviews</h1>
+            <article class="clientsall">
+                <section class="principal">
+                    <article class="secundaria" >
+                        <div class="capamascara">
+                        <div class="users">
+                            <div class="user1">
+                                <img class="iconitou" src="imagenes/iconito1.png">
+                                <div class="textous">
+                                    <img class="destello" src="imagenes/destellos.png">
+                                    <p>Es curioso: yo era fotógrafo antes de ser programador.</p>
+                                </div>
+                                <div class="estrellas">
+                                    <img class="estrella" src="imagenes/estrella.png">
+                                    <img class="estrella" src="imagenes/estrella.png">
+                                    <img class="estrella" src="imagenes/estrella.png">
+                                    <img class="estrella" src="imagenes/estrella.png">
+                                    <img class="estrella" src="imagenes/estrella.png">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="user2">
+                                <img class="iconitou" src="imagenes/iconito2.png">
+                                <div class="textous">
+                                    <img class="destello" src="imagenes/destellos.png">
+                                    <p> En teoría, la teoría y la práctica son lo mismo. En la práctica, no.</p>
+                                </div>
+                                <div class="estrellas">
+                                    <img class="estrella" src="imagenes/estrella.png">
+                                    <img class="estrella" src="imagenes/estrella.png">
+                                    <img class="estrella" src="imagenes/estrella.png">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                            <div class="cajabotones">
+                                <div class="botonrojo_izq"></div>
+                                <div class="botonrojo_der"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+            <!-- <article class="conjuntoimgtext" data-aos="fade-up" data-aos-duration="1500"> -->
+                <!-- <article class="cajapadreelements" data-aos="fade-up" data-aos-duration="1500"> -->
+                    <!-- <article class="cajahijoelements"> -->
+                        <!-- <img class="imguser3" src="imagenes/user3.svg"> -->
+                        <!-- <h1>Jonh Doe</h1> -->
+                        <!-- <h2>Product designer and Dribble</h2></article> -->
+                    <!-- <article class="cajahijoelements"> -->
+                        <!-- <img class="imguser3" src="imagenes/user3.svg"> -->
+                        <!-- <h1>Jonh Doe</h1> -->
+                        <!-- <h2>Product designer and Dribble</h2></article> -->
+                <!-- </article> -->
 
         
-            <div class="frase">
-                <h2> I enjoy working with theme and learn so much.You guys make the process fun and interesting.Good luck!</h2>
-            </div>
+            <!-- <div class="frase"data-aos="fade-up" data-aos-duration="1500"> -->
+                <!-- <h2> I enjoy working with theme and learn so much.You guys make the process fun and interesting.Good luck!</h2> -->
+            <!-- </div> -->
+            <!-- <div class="cajavaciapadre"><div class="cajavacia"></div><div class="cajavacia"></div></div> -->
             </article>
             <article class="marcas">
-                <div class="filan1">
+                <div class="filan1" data-aos="fade-up" data-aos-duration="1500">
                     <img class="imgclientss" src="imagenes/client-1.svg">
                     <img class="imgclientss" src="imagenes/client-2.svg">
                     <img class="imgclientss" src="imagenes/client-3.svg">
                     <img class="imgclientss" src="imagenes/client-4.svg">
                 </div>
-                <div class="filan2">
+                <div class="filan2" data-aos="fade-up" data-aos-duration="1500">
                     <img class="imgclientss" src="imagenes/client-5.svg">
                     <img class="imgclientss" src="imagenes/client-6.svg">
                     <img class="imgclientss" src="imagenes/client-7.svg">
@@ -341,71 +458,68 @@
 
 
     <section class="latestposts">
-        <h1>Latest posts</h1>
+        <h1 class="textlasts" data-aos="fade-up" data-aos-duration="1500">Latest posts</h1>
         <article class="imagenespost">
-            <div class="dentroimpost">
-                <img class="imgp" src="imagenes/1 (1).svg">
-                <h2 class="titlepost">5 Apps Development Tool for your Proyect</h2>
+                <div class="dentroimpost" data-aos="fade-up" data-aos-duration="1500">
+                <div class="cajaroja"><h1>Reviews</h1></div>
+                    <img class="imgp" src="imagenes/1 (1).svg">
+                    <h2 class="titlepost">5 Apps Development Tool for your Proyect</h2>
 
                 <div class="textpost"><h2>09 February,2020</h2><h2>·</h2><h2>Bolby</h2></div>
-            </div>
-            <div class="dentroimpost">
-                <img class="imgp" src="imagenes/2 (1).svg">
-                <h2 class="titlepost">Common Misconceptions About Payment</h2>
+                </div>
+                <div class="dentroimpost" data-aos="fade-up" data-aos-duration="1500">
+                <div class="cajaroja"><h1>Tutorial</h1></div>
+                    <img class="imgp" src="imagenes/2 (1).svg">
+                    <h2 class="titlepost">Common Misconceptions About Payment</h2>
 
                 <div class="textpost"><h2>07 February,2020</h2><h2>·</h2><h2>Bolby</h2></div>
             
-            </div>
-            <div class="dentroimpost">
-                <img class="imgp" src="imagenes/3 (1).svg">
-                <h2 class="titlepost">3 Things To Know About Startup Business</h2>
+                 </div>
+                <div class="dentroimpost" data-aos="fade-up" data-aos-duration="1500">
+                <div class="cajaroja"><h1>Business</h1></div>
+                    <img class="imgp" src="imagenes/3 (1).svg">
+                     <h2 class="titlepost">3 Things To Know About Startup Business</h2>
 
                 <div class="textpost"><h2>06 February,2020</h2><h2>·</h2><h2>Bolby</h2></div>
             
-            </div>
+                 </div>
         </article>
 
     </section>
 
     <section class="getintouch">
-            <h1 class="gettexto" >Get in Touch</h1>
+            <h1 class="gettexto" data-aos="fade-up" data-aos-duration="1500" >Get in Touch</h1>
         <div class="conjunto1">
-            <article class="gettextconj">
-                <img class="mapget" src="imagenes/map.svg">
-                <h1 class="getchange">Lets talk about everything!</h1>
-                <h2 class="getchange">Don´t like forms? Send me an email.</h2>
-             </article>
+        <article class="gettextconj">
+                <img class="mapget" src="imagenes/mapabueno.jpg">
+                <h1 class="getchange"data-aos="fade-up" data-aos-duration="1500">Lets talk about everything!</h1>
+                <h2 class="getchange"data-aos="fade-up" data-aos-duration="1500">Don´t like forms? Send me an email.</h2>
+        </article>
         
         <div class="conjunto2">
             <div class="doscajas">
-                <div class="cajaget">
-                    <input  class="borderinput" type="email" name="email" placeholder="Your name">
+            <div class="cajaget"data-aos="fade-up" data-aos-duration="1500">
+                    <input  class="borderinput" type="email" name="email" placeholder="Your name" required>
                 </div>
-                <div class="cajaget">
-                    <input  class="borderinput" type="email" name="email" placeholder="Email adress">
-                </div>
+            <div class="cajaget" data-aos="fade-up" data-aos-duration="1500">
+                    <input  class="borderinput" type="email" name="email" placeholder="Email adress" required></div>
             </div>
-            <div class="cajaget">
-                <input  class="borderinput" type="email" name="email" placeholder="Subject">
-            </div>
-            <div class="cajaget">
-                <input class="borderinput" type="email" name="email" placeholder="Message">
-            </div>
+            <div class="cajaget" data-aos="fade-up" data-aos-duration="1500">
+                <input  class="borderinput" type="email" name="email" placeholder="Subject" required></div>
+            <div class="cajaget"data-aos="fade-up" data-aos-duration="1500">
+                <input class="borderinput" type="email" name="email" placeholder="Message" required></div>
 
-            <a class="botonget"><h1>Send Message</h1></a>
+            <a class="botonget" data-aos="fade-up" data-aos-duration="1500">
+                <h1>Send Message</h1>
+            </a>
 
         </div>
-    </div>
+        </div>
         
 
 
     </section>
 
-
-
-    
-
-  
    </main>
 
   
@@ -417,6 +531,17 @@
     <script src="js/bouncein.js"></script>
 
     <script src="js/contador.js" type="module"></script>
+
+    <!-- <script src="js/animacioncontador.js" ></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/moveruser.js"></script>
+    <script src="js/filtrado.js"></script>
+    <script src="js/animated.js"></script>
+    <script src="js/scrollmenu.js"></script>
+
 
 
 </body>

@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    
+}
+
+section{
+    height: 100vh;
+}
+
+
+
+.franjacolores{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40px;
+    
+  }
+  
+
+
+.franjac{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height:34%;
+    
+    cursor: pointer;
+
+    position: relative;
+    
+}
+.franjac div.amplia{
+    width: 100vw;
+}
+
+ 
+.franjac div{
+    position:absolute;
+    height:100%;
+    width: 100%;
+  
+
+}
+
+
+
+.azul{
+    background-color: #0195ff;
+    transition: all 0.1s ease-out;
+    
+}
+
+
+.rojo{
+    width: 100vw;
+   background-color:  #ff0066;
+   transition: all 0.1s ease-out;
+
+}
+.amarillo{
+   
+    width: 100vw;
+    background-color: #ffb600;
+    transition: all 0.1s ease-out;
+    z-index: 1;
+
+}
+
+.caja h1{
+  font-size: 30px;
+   
+  
+ 
+}
+.ocultar{
+    display: none;
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+.mostrar{
+    display: inline;
+
+}
+
+
+.logoredes{
+    display: flex;
+    width: 100%;
+  }
+   
+  
+
+.logoeac{
+   
+    
+    margin: auto;
+    
+    
+
+}
+
+.redessociales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+}
+
+
+.imagenred{
+    width: 50px;
+    height: 50px;
+}

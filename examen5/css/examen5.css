@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	padding: 21px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+}
+
+a{
+	background-color: beige;
+	width: 80px;
+	border-radius: 30px;
+	padding: 8px;
+	cursor: pointer;
+}
+.contenedora{
+	display: flex;
+	flex-wrap: wrap;
+	width: 1000px;
+	gap:15px;
+}
+article{
+	display: flex;
+	
+}
+
+img{
+	width: 295px;
+	height: 241px	
+}
+
+.overlay{
+	width: 16%;
+	height: 26%;
+	background-color: rgba(150, 221, 150, 0.522);
+	position: absolute;
+	opacity: 0;
+  }
+	
+		
+
+.overlay:hover{
+	transition: all 1s ease;
+	opacity: 1;
+	
+}
+.iconito{
+	position: relative;
+	top: 180px;
+	left:20px;
+
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+		
+}
