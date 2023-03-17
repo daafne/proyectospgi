@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/fcde17cf77.js" crossorigin="anonymous"></script>
+	
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+
+    <link rel="stylesheet" href="./css/tiempo.css" type="text/css">
+	
+    <title>Tiempo</title>
+</head>
+<body>
+  
+
+    <header>
+        
+            <div><h1>METEOCEUTA</h1></div>
+            <ul>
+                <li><a href="#ceuta"><h1>Ceuta</h1></a></li>
+                <li><a href="#cadiz"><h1>Cadiz</h1></a></li>
+                <li><a href="#malaga"><h1>Malaga</h1></a></li>
+            </ul>
+            <div class="cajalupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+           
+    </header>
+<div class="conjuntosections">
+    <section>
+        <div class="ciudad"><h1 class="animate__animated animate__bounce"  id="ceuta">CEUTA</h1></div>
+        <article class="cajaconjunto animate__animated animate__bounce">
+            <img src="imagenes/Ceuta.jpg">
+            <div class="notatiempobarra">
+                <h1>22º</h1>
+                <div class="barraprincipal">
+                    <div class="barramovible"></div>
+                </div>
+            </div>
+            <img class="tiempox" src="imagenes/dom.png">
+
+        </article>
+    </section>
+    <section>
+        <div  class="ciudad"><h1 id="cadiz" >CÁDIZ</h1></div>
+        <article class="cajaconjunto animate__animated animate__bounce">
+            <img src="imagenes/Cadiz.jpg">
+            <div class="notatiempobarra">
+                <h1>18º</h1>
+                <div class="barraprincipal">
+                    <div class="barramovible"></div>
+                </div>
+            </div>
+            <img class="tiempox" src="imagenes/lluvia.png">
+
+        </article>
+    </section>
+    <section>
+        <div class="ciudad"><h1 id="malaga">MÁLAGA</h1></div>
+        <article class="cajaconjunto animate__animated animate__bounce">
+            <img src="imagenes/Malaga.png">
+            <div class="notatiempobarra">
+                <h1>25º</h1>
+                <div class="barraprincipal">
+                    <div class="barramovible"></div>
+                </div>
+            </div>
+            <img class="tiempox" src="imagenes/clima.png">
+
+        </article>
+    </section>
+</div>
+<script src="js/barras.js"></script>
+
+</body>
+</html>
