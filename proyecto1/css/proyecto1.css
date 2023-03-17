@@ -1028,7 +1028,8 @@ progress::-moz-progress-bar { background: #706CE3; }*/
 
 .textclients{
 
-	font-size: 80px;
+	font-size: 60px;
+    text-align: center;
 }
 
 .users{
